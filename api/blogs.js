@@ -41,7 +41,7 @@ const blogs = [
         screens: 'images/blog/153995268-0cb769b9-e0ee-48ea-83c1-09b881df4101.png',
         description: 'A detailed walkthrough of creating a feature-rich e-commerce platform inspired by Flipkart with modern technologies.',
         author: 'Ayush Kumar',
-        authorTitle: 'Full Stack Developer',
+        authorTitle: 'Software Developer Engineer-1',
         create_at: '26 June, 2024',
         blogSingleImg: 'images/blog-details/flipkart-detail.jpg',
         comment: '4',

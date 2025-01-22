@@ -7,7 +7,7 @@ const Expriences = [
     {
         date: ' May/2023- Present ',
         logo: 'images/Fitelologo.png',
-        position: 'Full Stack Developer',
+        position: 'Software Developer Engineer-1',
         companyName: ' Fitelo (No Guilt Fitness & Nutrition India Pvt. Ltd.),Mohail,punjab',
         workFrom: ',Hybrid'
         ,

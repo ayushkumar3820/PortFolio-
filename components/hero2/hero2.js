@@ -28,7 +28,7 @@ const Hero2 = () => {
                                                 I am Ayush Kumar.</h2>
                                         </div>
                                         <div data-swiper-parallax="300" className="slide-sub-title">
-                                            <h5>Full Stack Mern Developer</h5>
+                                            <h5>Software Developer Engineer-1</h5>
                                         </div>
                                         <div data-swiper-parallax="400" className="slide-text">
                                             <p>Must explain to how all this mistaken idea denouncing pleasure pain
@@ -50,7 +50,7 @@ const Hero2 = () => {
                                                 I am Ayush Kumar.</h2>
                                         </div>
                                         <div data-swiper-parallax="300" className="slide-sub-title">
-                                            <h5>Full Stack Mern Developer</h5>
+                                            <h5>Software Developer Engineer-1</h5>
                                         </div>
                                         <div data-swiper-parallax="400" className="slide-text">
                                             <p>Must explain to how all this mistaken idea denouncing pleasure pain

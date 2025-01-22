@@ -28,11 +28,11 @@ const Hero = () => {
                                         </h1>
                                     </div>
                                     <div data-swiper-parallax="300" className="slide-sub-title">
-                                        <h5>Full Stack Developer</h5>
+                                        <h5>Software Developer Engineer-1</h5>
                                     </div>
                                     <div data-swiper-parallax="400" className="slide-text">
                                         <p>Transforming ideas into impactful solutions with 
-                                            precision and passion for Full-Stack development.</p>
+                                            precision and passion for Software Developer Engineer-1.</p>
                                     </div>
                                     <div className="clearfix"></div>
                                     <div className="slide-btn">
