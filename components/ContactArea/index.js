@@ -23,7 +23,7 @@ const ContactArea = (props) => {
                                 <div className="col col-lg-6 col-md-12 col-12">
                                     <div className="wpo-contact-info">
                                         <div className="info-item">
-                                            <h2>Mohail, Punjab</h2>
+                                            <h2>Mohali, Punjab & Gurgaon</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon">
                                                     <i className="fi flaticon-location"></i>

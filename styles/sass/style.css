@@ -403,6 +403,25 @@ img {
   margin-bottom: 60px;
   text-align: center;
 }
+
+
+/* 🌈 Bright tech icon styling */
+.side-img-1 img { width: 50px; filter: drop-shadow(0 0 6px #61dafb); } /* React */
+.side-img-2 img { width: 50px; filter: drop-shadow(0 0 6px #ffd43b); } /* Python */
+.side-img-3 img { width: 50px; filter: drop-shadow(0 0 6px #fff); } /* Next.js */
+.side-img-4 img { width: 50px; filter: drop-shadow(0 0 6px #13aa52); } /* MongoDB */
+.side-img-5 img { width: 50px; filter: drop-shadow(0 0 6px #ff6f00); } /* TensorFlow */
+
+.side-img-1 img:hover,
+.side-img-2 img:hover,
+.side-img-3 img:hover,
+.side-img-4 img:hover,
+.side-img-5 img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in-out;
+}
+
+
 @media (max-width: 767px) {
   .wpo-section-title,
 .wpo-section-title-s2 {

@@ -4,7 +4,7 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Experiences = [
     {
-        date: 'Feb/2025 - Present',
+        date: 'Mar/2025 - Present',
         logo: 'https://weboum.com/image/weboum-footer-logo-1.png', 
         position: 'Software Developer Engineer-1',
         companyName: 'Weboum Technologies Pvt. Ltd., Mohali, Punjab',
