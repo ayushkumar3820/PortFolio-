@@ -57,6 +57,11 @@ const settings = {
 const ProjectSection = (props) => {
 
     const [open, setOpen] = React.useState(false);
+    const [mounted, setMounted] = React.useState(false);
+
+    React.useEffect(() => {
+        setMounted(true);
+    }, []);
 
     function handleClose() {
         setOpen(false);
@@ -88,19 +93,35 @@ const ProjectSection = (props) => {
                     </div>
                 </div>
                 <div className="wpo-project-wrap wpo-project-slide">
-                    <Slider {...settings}>
-                        {Projects.map((project, pro) => (
-                            <div className="wpo-project-item" key={pro}>
-                                <div className="wpo-project-img">
-                                    <img src={project.pImg} alt="" />
+                    {mounted ? (
+                        <Slider {...settings}>
+                            {Projects.map((project, pro) => (
+                                <div className="wpo-project-item" key={pro}>
+                                    <div className="wpo-project-img">
+                                        <img src={project.pImg} alt="" />
+                                    </div>
+                                    <div className="wpo-project-text">
+                                        <h2 onClick={() => handleClickOpen(project)}>{project.title}</h2>
+                                        <span>{project.subTitle}</span>
+                                    </div>
                                 </div>
-                                <div className="wpo-project-text">
-                                    <h2 onClick={() => handleClickOpen(project)}>{project.title}</h2>
-                                    <span>{project.subTitle}</span>
+                            ))}
+                        </Slider>
+                    ) : (
+                        <div className="row">
+                            {Projects.slice(0, 3).map((project, pro) => (
+                                <div className="col-lg-4 col-md-6 col-12 wpo-project-item" key={pro} style={{ marginBottom: '30px' }}>
+                                    <div className="wpo-project-img">
+                                        <img src={project.pImg} alt="" />
+                                    </div>
+                                    <div className="wpo-project-text">
+                                        <h2>{project.title}</h2>
+                                        <span>{project.subTitle}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Slider>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="shape-p">
@@ -124,7 +145,21 @@ const ProjectSection = (props) => {
             <div className="line-shape-2">
                 <img src='images/project/line-2.png' alt="" />
             </div>
-            <ProjectSingle open={open} onClose={handleClose} title={state.title} pImg={state.ps1img} psub1img1={state.psub1img1} psub1img2={state.psub1img2} />
+            <ProjectSingle
+                open={open}
+                onClose={handleClose}
+                title={state.title}
+                pImg={state.ps1img}
+                psub1img1={state.psub1img1}
+                psub1img2={state.psub1img2}
+                description={state.description}
+                projectType={state.projectType}
+                duration={state.duration}
+                completion={state.completion}
+                techStack={state.techStack}
+                strategies={state.strategies}
+                results={state.results}
+            />
         </div>
     );
 }

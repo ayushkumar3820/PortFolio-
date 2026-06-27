@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Glowing background gradient -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+  </defs>
+  
+  <circle cx="60" cy="60" r="50" fill="url(#glow)"/>
+  
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="40" stroke="url(#grad)" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.6"/>
+  
+  <!-- Interlocking futuristic 'G' and 'Z' shape -->
+  <path d="M45,42 C50,38 70,38 75,42 C80,46 80,54 75,58 L52,78 L78,78" stroke="url(#grad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M75,78 C70,82 50,82 45,78 C40,74 40,66 45,62" stroke="url(#grad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Modern tech core dot -->
+  <circle cx="60" cy="60" r="4" fill="#FFD700"/>
+</svg>

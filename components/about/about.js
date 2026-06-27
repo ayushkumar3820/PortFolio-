@@ -100,7 +100,7 @@ const About = () => {
             >
               <div className="wpo-about-exprience">
                 <motion.h2 variants={counterAnimation}>
-                  <AnimatedCounter from={0} to={2.1} duration={3} decimals={1} />
+                  <AnimatedCounter from={0} to={3} duration={3} decimals={0} />
                 </motion.h2>
                 <span>Years of Experience</span>
               </div>
@@ -125,12 +125,11 @@ const About = () => {
               <div className="wpo-about-title">
                 <h2>My Advantage</h2>
                 <p>
-                  I’m a passionate <strong>Full-Stack Developer</strong> skilled
-                  in the <strong>MERN stack</strong> and{" "}
-                  <strong>Python-based AI/ML</strong> systems. I love transforming
-                  data-driven ideas into interactive, user-friendly web apps with
-                  React and Next.js. I focus on performance, clean code, and
-                  intelligent automation.
+                  Full Stack AI Engineer with <strong>3 years of experience</strong> delivering
+                  production-grade <strong>MERN and Python/FastAPI</strong> applications. Built{" "}
+                  <strong>LLM pipelines</strong> (LangChain, RAG, OpenAI) that significantly
+                  reduced manual processing effort. Deployed scalable solutions on{" "}
+                  <strong>AWS EC2 with Docker</strong> achieving strong uptime and reliability.
                 </p>
               </div>
 

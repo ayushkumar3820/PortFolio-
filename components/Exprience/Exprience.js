@@ -4,26 +4,26 @@ import SectionTitle from '../SectionTitle/SectionTitle'
 
 const Experiences = [
     {
-        date: 'Mar/2025 - Present',
-        logo: 'https://weboum.com/image/weboum-footer-logo-1.png', 
-        position: 'Software Developer Engineer-1',
-        companyName: 'Weboum Technologies Pvt. Ltd., Mohali, Punjab',
+        date: 'Mar 2026 – Present',
+        logo: '/images/genzverticals-logo.svg',
+        position: 'Full Stack AI Developer',
+        companyName: 'GenZVerticals',
+        workFrom: 'Remote',
+        website: 'https://www.genzcine.com/'
+    },
+    {
+        date: 'Feb 2025 – Mar 2026',
+        logo: 'https://weboum.com/image/weboum-footer-logo-1.png',
+        position: 'Software Development Engineer-I',
+        companyName: 'WebOum Technology Pvt. Ltd., Mohali, Punjab',
         workFrom: 'On-site',
         website: 'https://weboum.com/'
     },
     {
-        date: 'May/2024 - Jan/2025',
+        date: 'Oct 2023 – Jan 2025',
         logo: '/images/Fitelologo.png',
-        position: 'Software Developer Engineer-1',
-        companyName: 'Fitelo (No Guilt Fitness & Nutrition India Pvt. Ltd.), Mohali, Punjab',
-        workFrom: 'On-site/Hybrid',
-        website: 'https://fitelo.co'
-    },
-    {
-        date: 'Oct/2023 - May/2024',
-        logo: '/images/Fitelologo.png',
-        position: 'Quality Analyst Intern',
-        companyName: 'Fitelo (No Guilt Fitness & Nutrition India Pvt. Ltd.), Punjab',
+        position: 'Software Development Engineer',
+        companyName: 'Fitelo Pvt Ltd, Mohali, Punjab',
         workFrom: 'On-site/Hybrid',
         website: 'https://fitelo.co'
     }

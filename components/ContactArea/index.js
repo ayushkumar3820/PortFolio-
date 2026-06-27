@@ -35,7 +35,7 @@ const ContactArea = (props) => {
                                         </div>
                                         <div  className="info-item ">
                                             <span style={{marginLeft:"70px"}}>
-                                            <h7><strong>ayushkumarnbd125@gamil.com </strong></h7>
+                                            <h7><strong>ayushkumarnbd125@gmail.com</strong></h7>
                                             </span>
                                             <div className="info-wrap">
                                                 <div className="info-icon">
@@ -47,7 +47,7 @@ const ContactArea = (props) => {
                                             </div>
                                         </div>
                                         <div className="info-item">
-                                            <h2>+91-9761688257</h2>
+                                            <h2>+91 9761688257</h2>
                                             <div className="info-wrap">
                                                 <div className="info-icon">
                                                     <i className="fi flaticon-phone-call"></i>

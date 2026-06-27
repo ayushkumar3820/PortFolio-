@@ -24,9 +24,10 @@ const Hero = () => {
                         options={{
                           strings: [
                             "I Am Ayush Kumar",
-                            "Full-Stack Developer",
-                            "Python & AI Engineer",
-                            "React Frontend Developer",
+                            "Full Stack AI Developer",
+                            "MERN Stack Engineer",
+                            "Python & FastAPI Expert",
+                            "LangChain & RAG Builder",
                           ],
                           autoStart: true,
                           loop: true,
@@ -40,18 +41,17 @@ const Hero = () => {
                   {/* ====== Subtitle ====== */}
                   <div data-swiper-parallax="300" className="slide-sub-title">
                     <h5>
-                      Software Developer Engineer-1
+                      Full Stack AI Developer
                     </h5>
                   </div>
 
                   {/* ====== Description ====== */}
                   <div data-swiper-parallax="400" className="slide-text">
                     <p>
-                      Building intelligent, scalable web applications using{" "}
-                      <strong>React, Next.js, and Python</strong>. Passionate
-                      about integrating <strong>AI and Data Science</strong> into
-                      modern web solutions to create meaningful digital
-                      experiences.
+                      Full Stack AI Engineer with <strong>3 years of experience</strong> delivering
+                      production-grade <strong>MERN and Python/FastAPI</strong> applications
+                      serving high-volume traffic. Built <strong>LLM pipelines</strong> (LangChain, RAG, OpenAI)
+                      and deployed scalable solutions on <strong>AWS EC2 with Docker</strong>.
                     </p>
                   </div>
 

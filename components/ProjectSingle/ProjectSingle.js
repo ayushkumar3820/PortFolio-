@@ -5,8 +5,30 @@ import Contact from './contact';
 import RelatedProject from './related';
 
 
-const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1img2, }) => {
+const ProjectSingle = ({
+    maxWidth,
+    open,
+    onClose,
+    title,
+    pImg,
+    psub1img1,
+    psub1img2,
+    description,
+    projectType,
+    duration,
+    completion,
+    techStack,
+    strategies,
+    results,
+}) => {
 
+    const displayDescription = description || "This project focused on building a robust solution to efficiently manage data and provide seamless integration. It was designed with scalability, security, and optimal performance in mind to ensure the system could perform well in modern web applications.";
+    const displayType = projectType || "Software Development";
+    const displayDuration = duration || "3 Months";
+    const displayCompletion = completion || "2025";
+    const displayTechStack = techStack || "React · Node.js";
+    const displayStrategies = strategies || "Prioritized efficient workflows, leveraging modern tools and methodologies to ensure seamless project execution. Focus on scalability, security, and modular component architecture.";
+    const displayResults = results || "Delivered a reliable, high-performance solution that met client requirements and ensured adaptability.";
 
     return (
         <Fragment>
@@ -29,24 +51,18 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                             <div className="row align-items-center mb-5">
                                                 <div className="col-lg-7">
                                                     <div className="wpo-project-single-title">
-                                                        <h3>{title} Project</h3>
+                                                        <h3>{title}</h3>
                                                     </div>
-                                                    <p>This project focused on building a robust backend solution to efficiently
-                                                         manage data and provide seamless integration with front-end applications. 
-                                                         It was designed with scalability, security, and optimal performance in mind to 
-                                                         ensure the system could grow and perform well in modern web applications.</p>
+                                                    <p>{displayDescription}</p>
                                                     
                                                 </div>
                                                 <div className="col-lg-5">
                                                     <div className="wpo-project-single-content-des-right">
                                                         <ul>
-                                                            {/* <li>Unver :<span>Gurugram,Haryana</span></li>
-                                                            <li>Client :<span>No Name</span></li>
-                                                            <li>Consult :<span>No Name</span></li> */}
-                                                            <li>Project Type :<span>Software developer </span></li>
-                                                            <li>Duration :<span>AnyTime</span></li>
-                                                            <li>Completion :<span> 2025</span></li>
-                                                            <li>Share :<span>Creative, Portfolio</span></li>
+                                                            <li>Project Type :<span>{displayType}</span></li>
+                                                            <li>Tech Stack :<span>{displayTechStack}</span></li>
+                                                            <li>Duration :<span>{displayDuration}</span></li>
+                                                            <li>Completion :<span>{displayCompletion}</span></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -61,32 +77,24 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                             <div className="row">
                                                 <div className="col-lg-6">
                                                     <div className="wpo-project-single-title">
-                                                        <h3>Our Strategies</h3>
+                                                        <h3>Key Strategies</h3>
                                                     </div>
-                                                    <p>In software development, our strategies are centered on building robust and scalable solutions tailored to diverse project requirements.
-                                                         We prioritize efficient workflows, leveraging modern tools and methodologies to ensure seamless project execution.
-                                                          By focusing on user needs and future scalability, we create software that not only meets current requirements but also adapts to evolving demands.
-                                                           Collaboration and communication are key elements of our approach, enabling us to deliver innovative and high-quality software projects across various domains.</p>
+                                                    <p>{displayStrategies}</p>
                                                     
                                                 </div>
                                                 <div className="col-lg-6">
                                                     <div className="wpo-project-single-item-quote">
-                                                        <p>"Excellent solution that greatly enhances the functionality and appearance of the application. 
-                                                            It demonstrates professional-level development and attention to detail. 
-                                                            I’m extremely satisfied with the results."</p>
-                                                        <span>Ayush - <span>Software Engineer</span></span>
+                                                        <p>"Excellent solution that greatly enhances the functionality and appearance of the application. It demonstrates professional-level development and attention to detail."</p>
+                                                        <span>Ayush Kumar - <span>Full Stack AI Developer</span></span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="wpo-project-single-item">
                                             <div className="wpo-project-single-title">
-                                                <h3>Our approach</h3>
+                                                <h3>Our Approach</h3>
                                             </div>
-                                            <p>We focus on crafting innovative and scalable solutions that address complex challenges in software development. 
-                                                Our process emphasizes seamless collaboration, user-centric design, and the application of cutting-edge technologies to ensure optimal performance and adaptability. 
-                                                By tailoring our approach to the unique requirements of each project, we consistently deliver results that exceed client expectations. 
-                                                Through meticulous planning and execution, we aim to create systems that not only meet current needs but also anticipate future growth and advancements in the industry.</p>
+                                            <p>We focus on crafting innovative and scalable solutions that address complex challenges in software development. Our process emphasizes seamless collaboration, user-centric design, and the application of cutting-edge technologies to ensure optimal performance and adaptability. By tailoring our approach to the unique requirements of each project, we consistently deliver results that exceed expectations.</p>
                                         </div>
                                         <div className="wpo-project-single-gallery">
                                             <div className="row mt-4">
@@ -104,27 +112,11 @@ const ProjectSingle = ({ maxWidth, open, onClose, title, pImg, psub1img1, psub1i
                                         </div>
                                         <div className="wpo-project-single-item list-widget">
                                             <div className="row">
-                                                <div className="col-lg-6">
+                                                <div className="col-lg-12">
                                                     <div className="wpo-project-single-title">
-                                                        <h3>Resieved goals</h3>
+                                                        <h3>Project Results & Outcomes</h3>
                                                     </div>
-                                                    <ul>
-                                                        <li>Successfully implemented scalable backend architecture for seamless performance.</li>
-                                                        <li>Enhanced data management with efficient API endpoints.</li>
-                                                        <li>Achieved secure and optimized integration with front-end systems.</li>
-                                                        <li>Delivered a robust solution tailored to client requirements.</li>
-                                                    </ul>
-                                                </div>
-                                                <div className="col-lg-6 list-widget-s">
-                                                    <div className="wpo-project-single-title">
-                                                        <h3>Results</h3>
-                                                    </div>
-                                                    <ul>
-                                                        <li>Developed an efficient and scalable system with seamless integration.</li>
-                                                        <li>Ensured long-term adaptability through robust architecture.</li>
-                                                        <li>Delivered a reliable and user-focused solution..</li>
-                                                        <li>Conducted rigorous testing for optimal performance and usability.</li>
-                                                    </ul>
+                                                    <p>{displayResults}</p>
                                                 </div>
                                             </div>
                                         </div>

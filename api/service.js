@@ -1,104 +1,80 @@
-const Services = [
+// api/service.js — Updated: Development | AI Development | Cloud
+
+// ─── TAB 1: DEVELOPMENT (shown first) ─────────────────────────────────────
+export const DevServices = [
   {
-    Id: '1',
-    sImgS: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Graphic Design',
-    description: 'Designing creative and visually appealing graphics that elevate brand identity.',
-    des2: 'Specializing in logo design, promotional materials, and digital branding assets.',
-    des3: 'Delivering engaging visuals aligned with your business goals and target audience.',
-    icon: 'flaticon-vector',
-    ssImg1: 'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    Id: '2',
-    sImgS: 'https://images.unsplash.com/photo-1614036634943-57c3d4b4b9ed?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Figma Design',
-    description: 'Crafting modern and responsive designs using Figma for seamless collaboration.',
-    des2: 'Expert in building interactive prototypes and design systems optimized for scalability.',
-    des3: 'Delivering UX-centered designs that ensure consistency and accessibility.',
-    icon: 'flaticon-palette',
-    ssImg1: 'https://images.unsplash.com/photo-1614036634943-57c3d4b4b9ed?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1636955841416-df2d6b09ecb0?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    Id: '3',
-    sImgS: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'UI/UX Design',
-    description: 'Designing intuitive and aesthetic user interfaces to improve digital experiences.',
-    des2: 'Balancing visual appeal with functionality through structured user research.',
-    des3: 'Expert in creating responsive prototypes for both web and mobile applications.',
-    icon: 'flaticon-add',
-    ssImg1: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    Id: '4',
-    sImgS: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Web Development',
-    description: 'Building scalable, fast, and secure web applications using MERN & Next.js.',
-    des2: 'Expert in React, Node.js, MongoDB, and Express for full-stack performance.',
-    des3: 'Developing responsive and SEO-optimized web solutions tailored to client goals.',
+    Id: 'd1',
+    sTitle: 'Full-Stack Web Development',
+    description: 'Building high-performance, scalable web apps with React, Next.js, Node.js, and MongoDB. End-to-end ownership from UI to REST API.',
     icon: 'flaticon-coding',
-    ssImg1: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1200&q=80',
+    badge: 'MERN · Next.js · TypeScript',
   },
   {
-    Id: '5',
-    sImgS: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'App Development',
-    description: 'Developing modern, high-performance mobile apps with React Native and Flutter.',
-    des2: 'Creating cross-platform apps optimized for speed, scalability, and UX.',
-    des3: 'Providing end-to-end app solutions — from design to deployment.',
-    icon: 'flaticon-app-development',
-    ssImg1: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    Id: '6',
-    sImgS: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Software Development',
-    description: 'Delivering high-quality software solutions built with Python and Node.js.',
-    des2: 'Specializing in backend systems, API integration, and microservices.',
-    des3: 'Ensuring security, scalability, and maintainability across all software projects.',
+    Id: 'd2',
+    sTitle: 'Backend & API Engineering',
+    description: 'Designing robust REST and GraphQL APIs using Express, FastAPI, and PostgreSQL — optimised for speed, security, and 10k+ req/min throughput.',
     icon: 'flaticon-smartphone',
-    ssImg1: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1537432376769-00a4905e62b7?auto=format&fit=crop&w=1200&q=80',
+    badge: 'Node.js · FastAPI · PostgreSQL',
   },
   {
-    Id: '7',
-    sImgS: 'https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Manual Testing',
-    description: 'Ensuring software quality with deep manual testing for flawless performance.',
-    des2: 'Identifying UI/UX bugs, functional gaps, and performance issues before release.',
-    des3: 'Delivering QA documentation to support smooth and reliable deployments.',
-    icon: 'flaticon-social-media',
-    ssImg1: 'https://images.unsplash.com/photo-1581091012184-7e0cdfbb6793?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1581092332909-43e90f4f5b01?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    Id: '8',
-    sImgS: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Performance Testing',
-    description: 'Improving system efficiency through load, stress, and scalability testing.',
-    des2: 'Monitoring key metrics to optimize server response time and data flow.',
-    des3: 'Ensuring consistent performance across high-traffic and production environments.',
-    icon: 'flaticon-promotion',
-    ssImg1: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1200&q=80',
-  },
-  {
-    Id: '9',
-    sImgS: 'https://images.unsplash.com/photo-1629904853904-43fc06c3e0c1?auto=format&fit=crop&w=1200&q=80',
-    sTitle: 'Automation Testing',
-    description: 'Automating repetitive test cases using Selenium, PyTest, and Cypress.',
-    des2: 'Building reusable testing frameworks to reduce manual efforts.',
-    des3: 'Accelerating CI/CD pipelines with robust automation suites.',
-    icon: 'flaticon-email-marketing',
-    ssImg1: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80',
-    ssImg2: 'https://images.unsplash.com/photo-1629904853904-43fc06c3e0c1?auto=format&fit=crop&w=1200&q=80',
+    Id: 'd3',
+    sTitle: 'Mobile App Development',
+    description: 'Cross-platform mobile apps for Android & iOS built with React + Capacitor, integrating Google/Facebook OAuth and Razorpay/Apple Pay payments.',
+    icon: 'flaticon-app-development',
+    badge: 'React · Capacitor · OAuth',
   },
 ];
 
+// ─── TAB 2: AI DEVELOPMENT ────────────────────────────────────────────────
+export const AIServices = [
+  {
+    Id: 'a1',
+    sTitle: 'LLM Pipeline & RAG Systems',
+    description: 'Building production-grade LangChain + RAG pipelines using OpenAI, Groq AI, and ChromaDB — achieving 87%+ retrieval accuracy and 60% less manual processing.',
+    icon: 'flaticon-vector',
+    badge: 'LangChain · OpenAI · Groq AI',
+  },
+  {
+    Id: 'a2',
+    sTitle: 'ML Model Engineering',
+    description: 'Training, evaluating, and deploying ML models (XGBoost, Scikit-learn) for real-world problems like phishing detection — 94% accuracy on 50k+ URL datasets.',
+    icon: 'flaticon-palette',
+    badge: 'Python · XGBoost · FastAPI',
+  },
+  {
+    Id: 'a3',
+    sTitle: 'AI Automation & Integration',
+    description: 'Embedding AI capabilities into existing platforms via microservices — automated Q&A, intelligent content pipelines, and LLM-powered decision systems.',
+    icon: 'flaticon-add',
+    badge: 'OpenAI API · LangGraph · Gemini',
+  },
+];
+
+// ─── TAB 3: CLOUD DEVELOPMENT & HOSTING ──────────────────────────────────
+export const CloudServices = [
+  {
+    Id: 'c1',
+    sTitle: 'Cloud Infrastructure (AWS)',
+    description: 'Architecting and deploying scalable cloud solutions on AWS EC2, S3, Lambda, and RDS — achieving 99.8% uptime with CI/CD pipelines and auto-scaling groups.',
+    icon: 'flaticon-promotion',
+    badge: 'AWS EC2 · S3 · Lambda · RDS',
+  },
+  {
+    Id: 'c2',
+    sTitle: 'Docker & Container Deployment',
+    description: 'Containerising full-stack applications with Docker and orchestrating deployments via Docker Compose — ensuring consistent, portable, production-ready environments.',
+    icon: 'flaticon-email-marketing',
+    badge: 'Docker · Compose · Nginx',
+  },
+  {
+    Id: 'c3',
+    sTitle: 'CI/CD & DevOps Pipelines',
+    description: 'Setting up automated build, test, and deploy pipelines using GitHub Actions and AWS CodePipeline — shipping features faster with zero-downtime deployments.',
+    icon: 'flaticon-social-media',
+    badge: 'GitHub Actions · AWS · DevOps',
+  },
+];
+
+// Legacy default export (kept for backward compatibility)
+const Services = [...DevServices, ...AIServices, ...CloudServices];
 export default Services;
-    

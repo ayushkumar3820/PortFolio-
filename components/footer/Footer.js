@@ -23,9 +23,9 @@ const Footer = () => {
                   </Link>
                 </div>
                 <p>
-                  Full Stack Engineer specializing in MERN, Next.js, Python, and AI/ML.
-                  Passionate about building scalable apps and intelligent automation systems.
-                  Based in Mohali, Punjab — open to full-time opportunities.
+                  Full Stack AI Engineer with 3 years of experience delivering production-grade
+                  MERN and Python/FastAPI applications. Expert in LangChain, RAG, OpenAI, and
+                  AWS EC2 deployment. Based in Gurgaon, Haryana — open to full-time opportunities.
                 </p>
 
                 <div className="social-icons">
@@ -59,7 +59,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="mailto:ayushkumar3820@gmail.com"
+                        href="mailto:ayushkumarnbd125@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -111,22 +111,17 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link to="service" spy={true} smooth={true} duration={500}>
-                      Web Development
+                      Full Stack Development
                     </Link>
                   </li>
                   <li>
                     <Link to="service" spy={true} smooth={true} duration={500}>
-                      AI Integration
+                      AI Development
                     </Link>
                   </li>
                   <li>
                     <Link to="service" spy={true} smooth={true} duration={500}>
-                      Software Testing
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="service" spy={true} smooth={true} duration={500}>
-                      App Development
+                      Cloud Development & Hosting
                     </Link>
                   </li>
                 </ul>
